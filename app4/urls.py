@@ -12,6 +12,6 @@ urlpatterns = [
    path('', include(router.urls)),
    path('auth/',include('rest_framework.urls', namespace='rest_framework')),
    # path('gettoken/', obtain_auth_token),
-   path('gettoken/', customauthtoken.as_view()),
+   #path('gettoken/', customauthtoken.as_view()),
 ]
 
