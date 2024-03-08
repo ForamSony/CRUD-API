@@ -119,7 +119,9 @@ REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_RATES': {
         'anon': '2/day',
         'user': '5/hour',
-        'jack': '3/minute'
+        'jack': '3/minute',
+        'viewstu':'5/day',
+        'modifystu':'2/day'
     }
 }
 # Default primary key field type
