@@ -1,4 +1,4 @@
-from rest_framework.pagination import PageNumberPagination,LimitOffsetPagination
+from rest_framework.pagination import PageNumberPagination,LimitOffsetPagination,CursorPagination
 
 # class My(PageNumberPagination):
 #     page_size = 5 # 5 record in 1 page
@@ -7,8 +7,15 @@ from rest_framework.pagination import PageNumberPagination,LimitOffsetPagination
 #     max_page_size = 6 # maxi records in singlepage
 #     last_page_strings = 'end'
 
-class Mylimit(LimitOffsetPagination):
-   default_limit = 5
-   # limit_query_param = 'l'
-   # offset_query_param = 'o'
-   max_limit = 6
+
+# class Mylimit(LimitOffsetPagination):
+#    default_limit = 5
+#    # limit_query_param = 'l'
+#    # offset_query_param = 'o'
+#    max_limit = 6
+
+
+class Mycursor(CursorPagination):
+   page_size = 5
+   ordering = 'name'
+   cursor_query_param = 'c'
