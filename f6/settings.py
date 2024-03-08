@@ -120,6 +120,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+#search filter  Q
+REST_FRAMEWORK ={
+    'SEARCH_PARAM':'q'
+}
+
+
 #global filter
 # REST_FRAMEWORK = {
 #     'DEFAULT_FILTER_BACKENDS':['django_filters.rest_framework.DjangoFilterBackend']
