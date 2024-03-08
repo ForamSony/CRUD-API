@@ -13,7 +13,7 @@ urlpatterns = [
    path('auth/',include('rest_framework.urls', namespace='rest_framework')),
    # path('gettoken/', obtain_auth_token),
    #path('gettoken/', customauthtoken.as_view()),
-    path('gettoken/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('refreshtoken/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('verifytoken/', TokenVerifyView.as_view(), name='token_verify'),
+    # path('gettoken/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    # path('refreshtoken/', TokenRefreshView.as_view(), name='token_refresh'),
+    # path('verifytoken/', TokenVerifyView.as_view(), name='token_verify'),
 ]
