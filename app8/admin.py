@@ -8,4 +8,4 @@ class SingerAdmin(admin.ModelAdmin):
 
 @admin.register(Song)
 class SongAdmin(admin.ModelAdmin):
-    list_display = ['id','title','duration']
+    list_display = ['id','title','singer','duration']
